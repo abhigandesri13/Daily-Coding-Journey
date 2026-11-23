@@ -1,3 +1,7 @@
+#Level 1 – Easy exercises
+#4 PROGRAMS
+
+
 '''Exercise 1 – Print numbers
 
 Write a Python program to print numbers from 1 to 20 using a for loop.'''
@@ -14,7 +18,8 @@ for i in range(1, 51):
         print(i)
 
 
-'''Exercise 3 – Multiplication table
+
+'''Exercise 3 – Multiplication table 
 
 Take a number from the user and print its multiplication table from 1 to 10.
 
@@ -29,6 +34,7 @@ Expected output:
 number = int(input("Enter a Number: "))
 for i in range(1,11):
     print(f"{number} x {i} = {number*i}")
+
 
 
 '''Exercise 4 – Countdown

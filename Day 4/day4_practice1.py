@@ -16,6 +16,8 @@ word = input("Enter a word: ")
 reverse = word[::-1]
 if word.lower() == reverse.lower():
     print(f"{word} is a palindrome.")
+else:
+    print(f"{word} is not a palindrome.")
 
 
 '''Exercise 6 – Character frequency
@@ -32,12 +34,18 @@ Output: 2
 Hint: Use a loop and a counter, or investigate the count() method.'''
 
 string = input("Enter a string: ")
-char = input("Enter a character to count: ")
 
+while True:
+  char = input("Enter a character to count: ")
+  if len(char) == 1:
+    break
+  else:
+    print("Please enter a single character.") 
+    
 count = 0
 for ch in string.lower():
-    if ch == char.lower():
-        count += 1
+  if ch == char.lower():
+    count += 1
 
 print(f"The character '{char}' appears {count} times in the string.")
 

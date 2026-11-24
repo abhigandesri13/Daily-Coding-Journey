@@ -29,3 +29,21 @@ Try to use:
 - endswith()
 - if-else
 Note: This is a beginner validation exercise, not a complete production-grade email validator.'''
+
+while True:
+    username = input("Enter username: ").strip()
+    if len(username) >= 5:
+        break
+    else:
+        print("Username: Invalid")
+
+while True:
+    email = input("Enter email: ").strip().lower()
+    if "@" in email and email.endswith(".com"):
+        break
+    else:
+        print("Email: Invalid")
+
+print("\nUsername: Valid")
+print("Email: Valid")
+print("Registration details accepted.")
